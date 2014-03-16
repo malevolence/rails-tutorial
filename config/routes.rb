@@ -1,5 +1,5 @@
 SampleApp::Application.routes.draw do
-  get "users/new"
+  resources :users
   get "static_pages/home"
   get "/help" => 'static_pages#help'
   get "/about" => 'static_pages#about'

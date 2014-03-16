@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
-gem 'bcrypt-ruby'
+gem 'bcrypt-ruby', '3.1.2', platforms: 'ruby'
 
 group :development, :test do
 	gem 'sqlite3'
@@ -12,6 +12,7 @@ end
 group :test do
 	gem 'selenium-webdriver'
 	gem 'capybara'
+	gem 'factory_girl_rails'
 end
 
 # Use SCSS for stylesheets
